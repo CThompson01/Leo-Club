@@ -1,0 +1,46 @@
+/* Base Styles */
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+/* Banner Styles */
+
+body > header > div#banner > img {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+body > header > div#banner > h1 {
+	display: block;
+	font-size: 500%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Horizontal Navigation Styles */
+body > header > nav.horizontalNav li {
+	width: 25%;
+}
+
+nav.horizontalNav li {
+	display: block;
+	float: left;
+}
+
+nav.horizontalNav a {
+	display: block;
+	text-align: center;
+}
+
+nav.horizontalNav a:hover {
+	background-color: #f46842;
+}

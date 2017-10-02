@@ -1,0 +1,15 @@
+/* Base Styles */
+html {
+	background-color: #ffffff;
+}
+
+body {
+	background: #cedbe5;
+}
+
+/* Horizontal Navigation Styles */
+
+body > header > nav li {
+	background-color: #000000;
+	line-height: 1.9em;
+}
