@@ -7,9 +7,27 @@ body {
 	background: #cedbe5;
 }
 
+/* Banner Styles */
+
+body > header > div#banner > h1 {
+	font-size: 5em;
+}
+
 /* Horizontal Navigation Styles */
 
 body > header > nav li {
-	background-color: #000000;
+	background-color: #a00000;
 	line-height: 1.9em;
+}
+
+body > header > nav li:hover{
+	background-color: #dddddd;
+}
+
+body > header > nav a:hover {
+	color: #aa0000;
+}
+
+body > header > nav a {
+	color: #ffffff;
 }
