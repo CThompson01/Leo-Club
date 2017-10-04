@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html>
 <head>
    <!--
@@ -21,19 +22,51 @@
 </head>
 
 <body>
-   <header>
-      <div id="banner">
-         <img src="images/leo-logo.jpg" id="logo" alt="Leo Club Banner"/>
-         <img src="images/temp-banner.jpg" id="banner" alt="Leo Club Banner"/>
-      </div>
-      <nav class="horizontalNav">
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Sign Up!</a></li>
-         </ul>
-      </nav>
-   </header>
+  <header>
+    <div id="banner">
+        <img src="images/leo-logo.jpg" id="logo" alt="Leo Club Banner"/>
+        <img src="images/temp-banner.jpg" id="banner" alt="Leo Club Banner"/>
+    </div>
+    <nav class="horizontalNav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Sign Up!</a></li>
+        </ul>
+    </nav>
+  </header>
+  <div id="slide-show">
+    <img class="next-prev" onclick="prev();" src="images/slide-show/prev.jpg" alt="Slide Show of Images">
+    <img id="slide-show-img" src="images/slide-show/image-one.jpg" alt="Slide Show of Images">
+    <img class="next-prev" onclick="next();" src="images/slide-show/next.jpg" alt="Slide Show of Images">
+  </div>
+  <footer>
+    <h4>Follow Us On <i class="fa fa-snapchat-ghost"></i></h4>
+  </footer>
 </body>
 </html>
+
+<script type="text/javascript">
+  var slideshowing = 0, imgMax = 1,imgs = ["images/slide-show/image-one.jpg", "images/slide-show/image-two.jpg"];
+
+  function next() {
+    if (slideshowing >= imgMax) {
+      slideshowing = 0;
+      document.getElementById("slide-show-img").src = imgs[slideshowing];
+    } else {
+      slideshowing++;
+      document.getElementById("slide-show-img").src = imgs[slideshowing];
+    }
+  }
+
+  function prev() {
+    if (slideshowing <= 0) {
+      slideshowing = imgMax;
+      document.getElementById("slide-show-img").src = imgs[slideshowing];
+    } else {
+      slideshowing--;
+      document.getElementById("slide-show-img").src = imgs[slideshowing];
+    }
+  }
+</script>

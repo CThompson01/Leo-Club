@@ -1,6 +1,10 @@
 /* Base Styles */
 html {
-	background-color: #ffffff;
+	background: red; /* For Browsers Without Gradient Support */
+	background: -webkit-linear-gradient(white,lightblue); /* Safari */
+	background: -o-linear-gradient(white,lightblue); /* Opera */
+	background: -moz-linear-gradient(white,lightblue); /* Firefox */
+	background: linear-gradient(white,lightblue); /* Standard Syntax */
 }
 
 body {
@@ -30,4 +34,10 @@ body > header > nav a:hover {
 
 body > header > nav a {
 	color: #ffffff;
+}
+
+/* Footer Styles */
+
+body > footer {
+	background: #494343;
 }
