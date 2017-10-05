@@ -78,6 +78,7 @@ body > hr {
 body > div#slide-show {
 	width: 80%;
 	margin-left: auto;
+	margin-bottom: 2%;
 }
 
 body > div#slide-show img#slide-show-img {
