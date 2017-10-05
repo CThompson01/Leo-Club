@@ -60,6 +60,10 @@
 <script type="text/javascript">
   var slideshowing = 0, imgMax = 1,imgs = ["images/slide-show/image-one.jpg", "images/slide-show/image-two.jpg"];
 
+  if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.text(navigator.userAgent)) {
+    document.getElementByTagName("body").setAttribute("style","width:100%");
+  }
+
   function next() {
     if (slideshowing >= imgMax) {
       slideshowing = 0;
