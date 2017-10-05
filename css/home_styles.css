@@ -36,8 +36,30 @@ body > header > nav a {
 	color: #ffffff;
 }
 
+/* Body Text Styles */
+
+body > h1 {
+	font-size: 1.75em;
+}
+
+body > p {
+	font-size: 1.05em;
+}
+
 /* Footer Styles */
 
 body > footer {
 	background: #494343;
+	line-height: 2em;
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 1080px) {
+	body > h1{
+		font-size: 2.25em;
+	}
+
+	body > p {
+		font-size: 1.30em;
+	}
 }

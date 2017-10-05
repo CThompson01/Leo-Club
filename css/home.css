@@ -37,7 +37,7 @@ body > header > div#banner > h1 {
 /* Horizontal Navigation Styles */
 
 body > header > nav.horizontalNav li {
-	width: 25%;
+	width: 33.33%;
 }
 
 nav.horizontalNav li {
@@ -55,7 +55,6 @@ nav.horizontalNav a {
 body > h1 {
 	margin-left: 2%;
 	margin-bottom: 1%;
-	font-size: 1.75em;
 }
 
 body > h1#first {
@@ -65,7 +64,6 @@ body > h1#first {
 body > p {
 	margin-left: 2.5%;
 	margin-right: 2.5%;
-	font-size: 1.05em;
 }
 
 body > hr {
@@ -108,14 +106,11 @@ body > div#slide-show img.next-prev:hover {
 
 body > footer {
 	text-align: center;
-	line-height: 2em;
 }
 
 /* Mobile Styling */
 @media only screen and (max-width: 1080px) {
-
 	body {
 		width: 100%;
 	}
-	
 }

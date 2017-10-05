@@ -1,26 +1,17 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html>
 <head>
-   <!--
-    New Perspectives on HTML5 and CSS3, 7th Edition
-    Tutorial 3
-    Tutorial Case
-
-    Home Page of Pandaisia Chocolates
-    Author: Chase Thompson
-    Date:   9/25/17
-
-    Filename: pc_home.html
-   -->
    <meta charset="utf-8" />
    <meta name="keywords" content="leo, club, davenport, west, high, school" />
    <title>Home - Leo Club</title>
+   <link rel="icon" href="images/leo-logo.ico">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/home.css">
    <link rel="stylesheet" href="css/home_styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script type="text/javascript" src="scripts/mobiledetect.js"></script>
+   <script type="text/javascript" src="scripts/slideshow.js"></script>
 </head>
-
 <body>
   <header>
     <div id="banner">
@@ -29,10 +20,9 @@
     </div>
     <nav class="horizontalNav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Sign Up!</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="signup.html">Sign Up!</a></li>
         </ul>
     </nav>
   </header>
@@ -56,31 +46,3 @@
   </footer>
 </body>
 </html>
-
-<script type="text/javascript">
-  var slideshowing = 0, imgMax = 1,imgs = ["images/slide-show/image-one.jpg", "images/slide-show/image-two.jpg"];
-
-  if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.text(navigator.userAgent)) {
-    document.getElementByTagName("body").setAttribute("style","width:100%");
-  }
-
-  function next() {
-    if (slideshowing >= imgMax) {
-      slideshowing = 0;
-      document.getElementById("slide-show-img").src = imgs[slideshowing];
-    } else {
-      slideshowing++;
-      document.getElementById("slide-show-img").src = imgs[slideshowing];
-    }
-  }
-
-  function prev() {
-    if (slideshowing <= 0) {
-      slideshowing = imgMax;
-      document.getElementById("slide-show-img").src = imgs[slideshowing];
-    } else {
-      slideshowing--;
-      document.getElementById("slide-show-img").src = imgs[slideshowing];
-    }
-  }
-</script>
