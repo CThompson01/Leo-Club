@@ -108,4 +108,13 @@ body > div#slide-show img.next-prev:hover {
 
 body > footer {
 	text-align: center;
+	line-height: 2em;
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 1080px) {
+
+	body {
+		width: 100%;
+	}
 }
