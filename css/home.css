@@ -5,6 +5,10 @@ body {
 	margin-right: auto;
 }
 
+body > hr {
+	width: 90%;
+}
+
 /* Banner Styles */
 
 body > header > div#banner > img#logo {
@@ -44,6 +48,29 @@ nav.horizontalNav li {
 nav.horizontalNav a {
 	display: block;
 	text-align: center;
+}
+
+/* Body Text Styles */
+
+body > h1 {
+	margin-left: 2%;
+	margin-bottom: 1%;
+	font-size: 1.75em;
+}
+
+body > h1#first {
+	margin-top: 4%;
+}
+
+body > p {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	font-size: 1.05em;
+}
+
+body > hr {
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 /* Slide Show Styles */
