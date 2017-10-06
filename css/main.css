@@ -71,6 +71,15 @@ body > hr {
 	margin-bottom: 2%;
 }
 
+body > ul {
+	margin-left: 2.5%;
+}
+
+body > ul li {
+	margin-top: 1%;
+	margin-left: 3%;
+}
+
 /* Slide Show Styles */
 
 body > div#slide-show {
