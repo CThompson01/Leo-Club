@@ -1,10 +1,10 @@
 /* Base Styles */
 html {
 	background: red; /* For Browsers Without Gradient Support */
-	background: -webkit-linear-gradient(white,#cedbe5); /* Safari */
-	background: -o-linear-gradient(white,#cedbe5); /* Opera */
-	background: -moz-linear-gradient(white,#cedbe5); /* Firefox */
-	background: linear-gradient(white,#cedbe5); /* Standard Syntax */
+	background: -webkit-linear-gradient(white,#b9d3e8); /* Safari */
+	background: -o-linear-gradient(white,#b9d3e8); /* Opera */
+	background: -moz-linear-gradient(white,#b9d3e8); /* Firefox */
+	background: linear-gradient(white,#b9d3e8); /* Standard Syntax */
 }
 
 body {
